@@ -222,6 +222,10 @@
     overflow: hidden;
 }
 
+.heading-special{
+    padding-right: 12px;
+}
+
 .heading-content {
     font-size: 18px;
     text-align: start;
@@ -412,7 +416,7 @@
     justify-content: flex-start;
     align-items: center;
     padding: 0;
-    left: -14px;
+    left: -12px;
     width: 36px;
     height: 50px;
     top: 1px;
@@ -435,7 +439,7 @@
     width: 36px;
     height: 50px;
     top: 1px;
-    right: -14px;
+    right: -12px;
 }
 
 .footer-heading-right-arrow img {
@@ -469,23 +473,30 @@ footer {
 .first-section {
     border-top: 0;
     grid-column: 1/-1;
-    padding: 24px 0;
+    padding-top: 24px;
+    padding-bottom: 25px;
+
 }
 
 .second-section {
     border-top: 1px solid #dddddd;
     grid-column: 1/-1;
     padding: 24px 0;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 .third-section {
     border-top: 1px solid #dddddd;
     grid-column: 1/ -1;
-    padding: 24px 0;
+    padding: 26px 0;
+    padding-top: 24px;
+    padding-bottom: 26px;
 }
 
+
 .section-heading {
-    margin-bottom: 16px;
+    margin-bottom: 17px;
     line-height: 18px;
     font-size: 14px;
     font-weight: 500;
@@ -625,6 +636,8 @@ footer {
     margin: 0 auto;
     max-width: 560px;
     gap: 0px;
+    position: relative;
+    bottom: 1px;
 }
 
 .nav-search {
@@ -637,13 +650,16 @@ footer {
     padding: 0 2px !important;
     max-width: 20% !important;
     min-width: 0px !important;
+    position: relative;
+    left: 1px;
 }
 
 .nav-search img {
     height: 24px;
     width: 24px;
-
+    margin-bottom: 2px;
 }
+
 
 .nav-search span {
     font-size: 10px;
@@ -669,6 +685,7 @@ footer {
 .nav-wishlist img {
     height: 24px;
     width: 24px;
+    margin-bottom: 2px;
 }
 
 .nav-wishlist span {
@@ -687,11 +704,14 @@ footer {
     padding: 0 2px !important;
     max-width: 20% !important;
     min-width: 0px !important;
+    position: relative;
+    right: 2px;
 }
 
 .nav-login img {
     height: 24px;
     width: 24px;
+    margin-bottom: 2px;
 }
 
 .nav-login span {
