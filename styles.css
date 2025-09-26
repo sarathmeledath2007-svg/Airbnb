@@ -772,6 +772,11 @@ footer {
         flex-direction: row;
     }
 
+    .header-airbnb-red-logo{
+        position: relative;
+        bottom: 5px;
+    }
+
     .header-section-icons {
         margin: 22px auto 24px;
         width: 500px;
@@ -792,6 +797,18 @@ footer {
         /* gap: 35px; */
         position: relative;
         right: 14px;
+    }
+
+    .header-text{
+        font-size: 14px;
+    }
+
+    .icon-section-two{
+        right: 12px;
+    }
+
+    .icon-section-three{
+        right: 40px;
     }
 
     .header-second-home {
@@ -824,18 +841,20 @@ footer {
     }
 
     .new-one {
-        top: -18px;
-        left: -72px;
+        top: -21px;
+        left: -86px;
     }
 
     .new-second {
-        top: -18px;
-        left: -56px;
+        top: -21px;
+        left: -66px;
     }
 
     .header-navication-icon {
         display: flex;
         justify-content: flex-end;
+        position: relative;
+        bottom: 7px;
     }
 
     .header-navication-one {
@@ -923,6 +942,8 @@ footer {
         outline: #dbdbdb;
         background: transparent;
         font-size: 14px;
+        line-height: 18px;
+        letter-spacing: normal;
     }
 
     .search-line {
@@ -1004,5 +1025,61 @@ footer {
         font-size: 20px;
     }
 
+    /* footer last section two */
 
+    .footer-section-content{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 8px;
+    }
+
+    .second-section{
+        border-top: none;
+    }
+
+    .third-section{
+        border-top: none;
+    }
+
+    .footer-last-section{
+        display: none;
+    }
+
+    .footer-last-section-two{
+        border-top: 1px solid #ebebeb;
+        padding-top: 19px;
+        padding-bottom: 8px;
+    }
+    .footer-last-two{
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+    }
+
+    .section-first-line{
+        position: relative;
+        top: 6px;
+    }
+
+    .social-media-ul{
+        position: relative;
+        top: 5px;
+        left: 4px;
+    }
+
+    .last-line-div{
+        display: flex;
+        position: relative;
+        top: 1px;
+    }
+
+    .inc{
+        margin-right: 8px;
+    }
+
+    /* navication section */
+
+    .navication{
+        display: none !important;
+    }
 }
