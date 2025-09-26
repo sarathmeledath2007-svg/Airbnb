@@ -20,6 +20,11 @@
 
 .header {
     overflow: hidden;
+    display: block;
+}
+
+.header-section-second{
+    display: none;
 }
 
 .header-input {
@@ -528,6 +533,10 @@ footer {
 .footer-last-section {
     padding: 24px 0;
     border-top: 1px solid #ebebeb !important;
+}
+
+.footer-last-section-two{
+    display: none;
 }
 
 .section-first-line {
