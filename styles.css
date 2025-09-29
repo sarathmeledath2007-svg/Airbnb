@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "normal";
+    font-family: "Nnormal";
     src: url(font/AirbnbCerealVF_W_Wght.2d9d32865ef1262644c455b3ead871e9.woff2);
 }
 
@@ -10,7 +10,7 @@
 
 .body-div {
     --explore_padding-inline: 24px;
-    font-family: normal;
+    font-family: Nnormal;
     letter-spacing: normal;
     line-height: 1.125rem;
     font-size: 0.875rem;
@@ -23,7 +23,11 @@
     display: block;
 }
 
-.header-section-second{
+.header-section-second {
+    display: none;
+}
+
+.airbnb-full-logo{
     display: none;
 }
 
@@ -37,7 +41,7 @@
     border: 0.5px solid rgba(0, 0, 0, 0.1);
     border-radius: 40px;
     justify-content: center;
-    font-family: normal;
+    font-family: Nnormal;
     font-weight: inherit;
     align-items: center;
     background: #ffffff;
@@ -105,7 +109,7 @@
     align-items: center;
     flex-direction: column;
     display: flex;
-    font-family: normal;
+    font-family: Nnormal;
     min-width: 68px;
 }
 
@@ -156,7 +160,7 @@
     cursor: pointer;
     flex-direction: column;
     display: flex;
-    font-family: normal;
+    font-family: Nnormal;
     min-width: 68px;
 }
 
@@ -166,7 +170,7 @@
     cursor: pointer;
     flex-direction: column;
     display: flex;
-    font-family: normal;
+    font-family: Nnormal;
     min-width: 68px;
 }
 
@@ -239,7 +243,7 @@
     font-size: 18px;
     text-align: start;
     font-weight: 600;
-    font-family: normal;
+    font-family: Nnormal;
     line-height: 20.02px;
     letter-spacing: -0.18px;
 }
@@ -256,6 +260,10 @@
     stroke: currentcolor;
     stroke-width: 5.33333;
     overflow: visible;
+}
+
+.heading-content-button {
+    display: none;
 }
 
 .room-details-div {
@@ -497,19 +505,16 @@ footer {
 .second-section {
     border-top: 1px solid #dddddd;
     grid-column: 1/-1;
-    padding: 24px 0;
     padding-top: 24px;
     padding-bottom: 25px;
 }
 
 .third-section {
     border-top: 1px solid #dddddd;
-    grid-column: 1/ -1;
-    padding: 26px 0;
+    grid-column: 1/ -1;  
     padding-top: 24px;
     padding-bottom: 26px;
 }
-
 
 .section-heading {
     margin-bottom: 17px;
@@ -535,7 +540,7 @@ footer {
     border-top: 1px solid #ebebeb !important;
 }
 
-.footer-last-section-two{
+.footer-last-section-two {
     display: none;
 }
 
@@ -553,7 +558,7 @@ footer {
     padding: 6px 8px;
     font-size: 14px;
     font-weight: 500;
-    font-family: normal;
+    font-family: Nnormal;
     display: flex;
     text-align: center;
 }
@@ -574,7 +579,7 @@ footer {
     gap: 8px;
     display: flex;
     padding: 6px 8px;
-    font-family: normal;
+    font-family: Nnormal;
     font-weight: 500;
 }
 
@@ -632,6 +637,10 @@ footer {
 
 .privacy-span ol li span {
     margin-right: 5px;
+}
+
+.footer-last-section-three{
+    display: none;
 }
 
 /* navication */
@@ -781,7 +790,7 @@ footer {
         flex-direction: row;
     }
 
-    .header-airbnb-red-logo{
+    .header-airbnb-red-logo {
         position: relative;
         bottom: 5px;
     }
@@ -808,15 +817,16 @@ footer {
         right: 14px;
     }
 
-    .header-text{
+    .header-text {
         font-size: 14px;
+        font-family: Nnormal;
     }
 
-    .icon-section-two{
+    .icon-section-two {
         right: 12px;
     }
 
-    .icon-section-three{
+    .icon-section-three {
         right: 40px;
     }
 
@@ -834,14 +844,20 @@ footer {
 
     .header-text-one {
         margin-left: 16px;
+        position: relative;
+        bottom: 1px;
     }
 
     .header-text-second {
         margin-left: 8px;
+        position: relative;
+        bottom: 1px;
     }
 
     .header-text-third {
         margin-left: 12px;
+        position: relative;
+        bottom: 1px;
     }
 
     .header-second-new {
@@ -868,7 +884,7 @@ footer {
 
     .header-navication-one {
         margin-right: 12px;
-        background: #dbdbdb;
+        background: #f2f2f2;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -883,7 +899,7 @@ footer {
     }
 
     .header-navication-two {
-        background: #dbdbdb;
+        background: #f2f2f2;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -908,6 +924,8 @@ footer {
         height: 66px;
         gap: 12px;
         padding: 0 24px;
+        max-width: 850px;
+        margin: 0 auto;
     }
 
     .header-second-search-section {
@@ -930,13 +948,16 @@ footer {
         background: transparent;
         gap: 2px;
         width: 100%;
-        height: 66px;
+        height: 64px;
     }
 
     .header-second-search-first {
-        padding: 15px 32px;
+        padding: 13px 32px 15px 32px;
         z-index: 2;
-        width: 100%;
+        width: 73%;
+        position: relative;
+        right: 1px;
+        top: 1px;
     }
 
     .where {
@@ -944,12 +965,15 @@ footer {
         letter-spacing: normal;
         font-size: 12px;
         color: #222222;
+        position: relative;
+        bottom: 1px;
     }
 
     .search-destinations {
         border: none;
         outline: #dbdbdb;
         background: transparent;
+        font-family: Nnormal;
         font-size: 14px;
         line-height: 18px;
         letter-spacing: normal;
@@ -962,52 +986,56 @@ footer {
     }
 
     .add-date {
-        border: none;
-        background: transparent;
         font-size: 14px;
         text-overflow: ellipsis;
         outline: #dbdbdb;
+        color: #6a6a6a;
     }
 
     .header-second-search-second {
-        padding: 15px 24px;
+        padding: 13px 24px 15px 24px;
         z-index: 2;
-        width: 100%;
+        width: 60%;
         overflow: hidden;
+        position: relative;
+        top: 1px;
     }
 
     .header-second-search-third {
-        padding: 15px 24px;
+        padding: 13px 24px 15px 24px;
         z-index: 2;
-        width: 100%;
+        width: 61%;
         overflow: hidden;
+        position: relative;
+        top: 1px;
     }
 
-    .header-fourth-section{
+    .header-fourth-section {
         display: flex;
         align-items: center;
         position: relative;
         height: 100%;
     }
 
-    .header-fourth-section-div{
-        padding: 15px 24px;
+    .header-fourth-section-div {
+        padding: 13px 24px 15px 24px;
         position: relative;
+        top: 1px;
     }
 
-    .header-button-search{
+    .header-button-search {
         padding: 9px 9px 9px 9px;
         right: 0;
         position: absolute;
     }
 
-    .header-search-button{
+    .header-search-button {
         border-radius: 50px;
         background: transparent;
         border: none;
     }
 
-    .header-search-button-div{
+    .header-search-button-div {
         border-radius: 50px;
         transform: none;
         transform-origin: 50% 50% 0px;
@@ -1019,76 +1047,298 @@ footer {
         align-items: center;
     }
 
-    .header-search-button-div img{
+    .header-search-button-div img {
         width: 16px;
         height: 16px;
     }
 
     /* main section */
 
-    .room-details-div{
-        grid-auto-columns:calc((100% - 35px) / 4)
+    .bengaluru-section {
+        margin-bottom: 1px;
     }
 
-    .heading-content{
+    .bangaluru-header-main {
+        height: 70.02px;
+    }
+
+    .heading {
+        margin-top: 32px !important;
+        margin-bottom: 13px !important;
+
+    }
+
+    .heading:nth-child(2) {
+        margin-top: 32px !important;
+    }
+
+    .heading-content {
         font-size: 20px;
+        position: relative;
+        bottom: 1px;
+    }
+
+    .heading-content-button {
+        display: block;
+        margin-left: auto;
+        align-items: center;
+    }
+
+    .heading-content-button-div {
+        column-gap: 4px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .heading-button-one {
+        opacity: 0.5;
+        border-color: #c1c1c1;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 24px;
+        height: 24px;
+        border-radius: 50px;
+        border-width: 1px;
+        border-style: solid;
+    }
+
+    .heading-button-two {
+        width: 24px;
+        height: 24px;
+        border-radius: 50px;
+        border: none;
+
+    }
+
+    .heading-button-image img {
+        height: 12px;
+        width: 12px;
+    }
+
+    .header-empty-line {
+        height: 1px;
+        width: 100%;
+        background-color: #ebebeb;
+    }
+
+    .room-details {
+        padding-right: 24px;
+    }
+
+    .room-details-div {
+        grid-auto-columns: calc((100% - 9px) / 4);
+        padding-top: 2px !important;
     }
 
     /* footer last section two */
 
-    .footer-section-content{
+    .footer-section-content {
         display: flex;
-        justify-content: space-between;
         padding-bottom: 8px;
+        gap: 16px;
     }
 
-    .second-section{
+    .first-section {
+        flex: 1;
+    }
+
+    .second-section {
         border-top: none;
+        flex: 1;
+
     }
 
-    .third-section{
+    .third-section {
         border-top: none;
+        flex: 1;
     }
 
-    .footer-last-section{
+    .footer-last-section {
         display: none;
     }
 
-    .footer-last-section-two{
+    .footer-last-section-two {
+        display: block;
         border-top: 1px solid #ebebeb;
         padding-top: 19px;
         padding-bottom: 8px;
     }
-    .footer-last-two{
+
+    .footer-last-two {
         display: flex;
         flex: 1;
         justify-content: space-between;
     }
 
-    .section-first-line{
+    .section-first-line {
         position: relative;
         top: 6px;
     }
 
-    .social-media-ul{
+    .social-media-ul {
         position: relative;
         top: 5px;
         left: 4px;
     }
 
-    .last-line-div{
+    .last-line-div {
         display: flex;
         position: relative;
         top: 1px;
     }
 
-    .inc{
+    .inc {
         margin-right: 8px;
     }
 
     /* navication section */
 
-    .navication{
+    .navication {
         display: none !important;
     }
+
+}
+
+/* media call a 905px*/
+
+@media screen and (min-width: 905px) {
+
+    .header-button-search {
+        right: -1px;
+    }
+
+
+}
+
+/* media call a 906px*/
+
+@media screen and (min-width: 906px) {
+
+    .header-button-search {
+        right: 0px;
+    }
+
+}
+
+/* media call a 950px*/
+
+@media screen and (min-width: 950px) {
+    .header-section-first{
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .header-airbnb-red-logo{
+        bottom: 7px;
+    }
+
+    .airbnb-red-logo{
+        display: none;
+    }
+
+    .airbnb-full-logo{
+        display: block;
+    }
+
+    .header-section-icons{
+        left: 60px;
+    }
+
+    .heading{
+        margin: 32px 32px 14px;
+    }
+
+    .bengaluru-section {
+        margin-bottom: 0px;
+    }
+
+    .room-details {
+        padding-right: 32px;
+    }
+
+    .room-details-div {
+        padding: 4px 32px 0;
+        grid-auto-columns: calc((100% - 12px) / 5);
+    }
+
+    .room-content{
+        row-gap: 3px;
+    }
+
+    /* footer section */
+
+    footer{
+        padding-bottom: 0;
+    }
+
+    .footer-heading{
+        padding: 48px 32px;
+    }
+
+    .footer-section-main{
+        padding: 0 32px;
+    }
+
+    .footer-section-content{
+        padding-bottom: 0px;
+    }
+
+    .first-section{
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .second-section{
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .third-section{
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .footer-last-section-two{
+        display: none;
+    }
+
+    .footer-last-section-three{
+        display: block;
+        border-top: 1px solid #ebebeb;
+        padding-top: 22px;
+        padding-bottom: 20px;
+    }
+
+    .footer-last-three{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .section-first{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .section-two{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .section-second-line{
+        display: flex;
+        position: relative;
+        bottom: 2px;
+    }
+
+    .social-media{
+        margin: 0;
+    }
+
+    .social-media-ul{
+        top: -4px;
+        margin: 0 0 0 18px !important;
+    }     
 }
