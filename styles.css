@@ -27,7 +27,7 @@
     display: none;
 }
 
-.airbnb-full-logo{
+.airbnb-full-logo {
     display: none;
 }
 
@@ -97,7 +97,6 @@
     overflow: hidden;
     position: relative;
     height: 64px;
-
 }
 
 .header-second-section:hover {
@@ -119,9 +118,6 @@
     flex-direction: column;
     display: flex;
     cursor: pointer;
-}
-
-.header-icon-span {
     transform-origin: center bottom;
     transform: none;
     margin-bottom: 6px;
@@ -250,6 +246,8 @@
 
 .heading-arrow {
     margin-inline-start: 2px;
+    position: relative;
+    bottom: 1px;
 }
 
 .heading img {
@@ -266,8 +264,11 @@
     display: none;
 }
 
-.room-details-div {
+.room-details {
     padding: 4px 24px 0px;
+}
+
+.room-details-div {
     overflow-y: hidden;
     display: grid;
     grid-auto-flow: column;
@@ -408,6 +409,8 @@
     position: relative;
     background: #f7f7f7;
     padding: 48px 24px;
+    max-width: 1824px;
+    margin: 0 auto;
 }
 
 .footer-heading h2 {
@@ -415,7 +418,7 @@
     line-height: 1.625rem;
     font-size: 1.375rem;
     font-weight: 500;
-    letter-spacing: -0.01375rem;
+    letter-spacing: -0.44px;
 }
 
 .footer-heading-line {
@@ -474,17 +477,12 @@
 
 /* footer section */
 
-footer {
-    padding-bottom: 16px;
-}
-
-.footer-section {
-    background: #f7f7f7;
-}
-
 .footer-section-main {
+    background: #f7f7f7;
     padding: 0 24px;
-    max-width: 1920px !important;
+    max-width: 1824px !important;
+    margin: 0 auto;
+    padding-bottom: 16px;
 }
 
 .footer-section-content {
@@ -499,7 +497,6 @@ footer {
     grid-column: 1/-1;
     padding-top: 24px;
     padding-bottom: 25px;
-
 }
 
 .second-section {
@@ -511,7 +508,7 @@ footer {
 
 .third-section {
     border-top: 1px solid #dddddd;
-    grid-column: 1/ -1;  
+    grid-column: 1/ -1;
     padding-top: 24px;
     padding-bottom: 26px;
 }
@@ -570,7 +567,7 @@ footer {
 .english {
     position: relative;
     bottom: 3px;
-
+    will-change: transform;
 }
 
 .first-line-two {
@@ -621,25 +618,35 @@ footer {
     font-size: 0.875rem !important;
     line-height: 1.125rem !important;
     color: rgb(34, 34, 34) !important;
-}
-
-.privacy-span {
     line-height: 1.125rem;
     font-size: 0.875rem;
     letter-spacing: normal;
 }
 
-.privacy-span ol {
+.privacy ol {
     list-style: none;
     display: flex;
     gap: 3px;
 }
 
-.privacy-span ol li span {
-    margin-right: 5px;
+.privacy ol li span {
+    margin-right: 8px;
 }
 
-.footer-last-section-three{
+.privacy-li-second {
+    margin-left: -3px;
+}
+
+.privacy-li-third {
+    margin-left: -3px;
+}
+
+.privacy-li-fourth {
+    margin-left: -3px;
+    color: #6a6a6a;
+}
+
+.footer-last-three {
     display: none;
 }
 
@@ -653,7 +660,8 @@ footer {
     height: calc(var(--tab-bar-height, 65px) + var(--overflow-padding)) !important;
     background: #ffffff;
     border-top: 1px solid #ebebeb;
-    transition: transform 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955), visibility 0.2s !important;
+    transition: transform 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955),
+        visibility 0.2s !important;
     z-index: 1;
     padding-left: 4px;
     padding-right: 4px;
@@ -694,15 +702,12 @@ footer {
     margin-bottom: 2px;
 }
 
-
 .nav-search span {
     font-size: 10px;
     line-height: 12px;
     color: #da1249;
     text-overflow: ellipsis !important;
-
 }
-
 
 .nav-wishlist {
     display: flex;
@@ -757,17 +762,14 @@ footer {
 /* media call at 412px */
 
 @media screen and (min-width: 412px) {
-
     .header-second-section {
         padding-inline: 64px;
     }
-
 }
 
 /* media call at 744px */
 
 @media screen and (min-width: 744px) {
-
     .header {
         display: none;
     }
@@ -804,7 +806,6 @@ footer {
         position: relative;
         left: 96px;
         top: -5px;
-
     }
 
     .header-icons-section {
@@ -893,11 +894,6 @@ footer {
         width: 40px;
     }
 
-    .header-navication-one img {
-        position: relative;
-        top: 2px;
-    }
-
     .header-navication-two {
         background: #f2f2f2;
         display: flex;
@@ -911,8 +907,6 @@ footer {
     .header-navication-two img {
         height: 16px;
         width: 16px;
-        position: relative;
-        top: 2px;
     }
 
     .header-second-search {
@@ -937,13 +931,13 @@ footer {
         border: 1px solid #dddddd;
         width: 100%;
         box-shadow: rgba(0, 0, 0, 0.1) 0 8px 24px 0, rgba(0, 0, 0, 0.02) 0 0 0 1px;
-
     }
 
     .header-second-search-content {
         opacity: 1;
         display: grid;
-        grid-template-columns: minmax(0, 2fr) 1px minmax(0, 1fr) 1px minmax(0, 1fr) 1px minmax(0, 2fr);
+        grid-template-columns: minmax(0, 2fr) 1px minmax(0, 1fr) 1px minmax(0, 1fr) 1px minmax(0,
+                2fr);
         align-items: center;
         background: transparent;
         gap: 2px;
@@ -1052,6 +1046,10 @@ footer {
         height: 16px;
     }
 
+    .become-host {
+        display: none;
+    }
+
     /* main section */
 
     .bengaluru-section {
@@ -1065,7 +1063,6 @@ footer {
     .heading {
         margin-top: 32px !important;
         margin-bottom: 13px !important;
-
     }
 
     .heading:nth-child(2) {
@@ -1073,7 +1070,7 @@ footer {
     }
 
     .heading-content {
-        font-size: 20px;
+        font-size: 18px;
         position: relative;
         bottom: 1px;
     }
@@ -1109,7 +1106,6 @@ footer {
         height: 24px;
         border-radius: 50px;
         border: none;
-
     }
 
     .heading-button-image img {
@@ -1125,11 +1121,13 @@ footer {
 
     .room-details {
         padding-right: 24px;
+        padding-left: 24px;
+        padding-top: 0;
     }
 
     .room-details-div {
-        grid-auto-columns: calc((100% - 9px) / 4);
-        padding-top: 2px !important;
+        grid-auto-columns: calc((100% - 32px) / 4);
+        padding-top: 2px;
     }
 
     /* footer last section two */
@@ -1147,7 +1145,6 @@ footer {
     .second-section {
         border-top: none;
         flex: 1;
-
     }
 
     .third-section {
@@ -1193,60 +1190,70 @@ footer {
         margin-right: 8px;
     }
 
+    .privacy ol li span {
+        margin-right: 8px;
+    }
+
+    .privacy-li-second {
+        margin-left: -3px;
+    }
+
+    .privacy-li-third {
+        margin-left: -3px;
+    }
+
+    .privacy-li-fourth {
+        margin-left: -3px;
+    }
+
     /* navication section */
 
     .navication {
         display: none !important;
     }
-
 }
 
 /* media call a 905px*/
 
 @media screen and (min-width: 905px) {
-
     .header-button-search {
         right: -1px;
     }
-
-
 }
 
 /* media call a 906px*/
 
 @media screen and (min-width: 906px) {
-
     .header-button-search {
         right: 0px;
     }
-
 }
 
 /* media call a 950px*/
 
 @media screen and (min-width: 950px) {
-    .header-section-first{
+    .header-section-first {
         padding-left: 32px;
         padding-right: 32px;
     }
 
-    .header-airbnb-red-logo{
+    .header-airbnb-red-logo {
         bottom: 7px;
     }
 
-    .airbnb-red-logo{
+    .airbnb-red-logo {
         display: none;
     }
 
-    .airbnb-full-logo{
+    .airbnb-full-logo {
         display: block;
     }
 
-    .header-section-icons{
+    .header-section-icons {
         left: 60px;
     }
 
-    .heading{
+    .heading {
         margin: 32px 32px 14px;
     }
 
@@ -1256,36 +1263,276 @@ footer {
 
     .room-details {
         padding-right: 32px;
+        padding-left: 32px;
+        margin-bottom: 1px;
     }
 
     .room-details-div {
-        padding: 4px 32px 0;
-        grid-auto-columns: calc((100% - 12px) / 5);
-    }
-
-    .room-content{
-        row-gap: 3px;
+        grid-auto-columns: calc((100% - 44px) / 5);
     }
 
     /* footer section */
 
-    footer{
+    footer {
         padding-bottom: 0;
     }
 
-    .footer-heading{
+    .footer-heading {
         padding: 48px 32px;
     }
 
-    .footer-section-main{
+    .footer-section-main {
         padding: 0 32px;
     }
 
-    .footer-section-content{
+    .footer-section-content {
         padding-bottom: 0px;
     }
 
-    .first-section{
+    .first-section {
+        padding-top: 32px;
+        padding-bottom: 33px;
+    }
+
+    .second-section {
+        padding-top: 32px;
+        padding-bottom: 33px;
+    }
+
+    .third-section {
+        padding-top: 32px;
+        padding-bottom: 33px;
+    }
+
+    .footer-last-section-two {
+        display: none;
+    }
+
+    .footer-last-three {
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+        display: block;
+        border-top: 1px solid #ebebeb;
+        padding-top: 21px;
+        padding-bottom: 20px;
+    }
+
+    .section-first {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .section-two {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .section-second-line {
+        display: flex;
+        position: relative;
+        bottom: 2px;
+    }
+
+    .social-media {
+        margin: 0;
+    }
+
+    .social-media-ul {
+        top: -4px;
+        margin: 0 0 0 18px !important;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .room-details-div {
+        grid-auto-columns: calc((100% - 44px) / 5);
+    }
+
+    .section-first {
+        position: relative;
+        top: 1px;
+    }
+}
+
+@media screen and (min-width: 1128px) {
+
+    .header-section-icons {
+        left: 126px;
+    }
+
+    .header-second-home {
+        position: relative;
+        right: 13px;
+    }
+
+    .header-navication-icon-first {
+        display: flex;
+        gap: 12px;
+    }
+
+    .become-host {
+        display: block;
+        background-color: transparent;
+        border: none;
+        padding: 11px 12px;
+        font-size: 14px;
+        font-weight: 500;
+        font-family: Nnormal;
+        will-change: transform;
+    }
+
+    .room-details-div {
+        grid-auto-columns: calc((100% - 54px) / 6);
+    }
+
+    .section-first {
+        top: 2px;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+    .header-section-second {
+        padding-bottom: 32px;
+    }
+
+    .header-section-first {
+        padding-right: 48px;
+        padding-left: 48px;
+        margin-top: 8px;
+    }
+
+    .heading {
+        margin: 32px 48px 14px;
+    }
+
+    .heading-arrow {
+        bottom: 0;
+    }
+
+    .heading-arrow-second {
+        position: relative;
+        bottom: 1px;
+    }
+
+    .heading-button-image {
+        position: relative;
+        top: 1px;
+    }
+
+    /* .bengaluru-section{
+        max-width: 1344px;
+        margin: 0 auto;
+    } */
+
+    .room-details {
+        padding-right: 48px;
+        padding-left: 48px;
+        padding-top: 2px;
+        margin-bottom: 1px;
+    }
+
+    .room-details-div {
+        grid-auto-columns: calc((100% - 66px) / 7);
+    }
+
+    .image-content-favourite {
+        padding: 5.6px 9.5px;
+    }
+
+    .image-content-favourite span {
+        position: relative;
+        bottom: 1px;
+    }
+
+    .room-content {
+        row-gap: 3px;
+    }
+
+    .first-line {
+        line-height: 15px;
+    }
+
+    .footer-heading {
+        padding: 48px 48px;
+    }
+
+    .footer-heading h2 {
+        margin-bottom: 9px;
+    }
+
+    .footer-section-main {
+        padding-right: 48px;
+        padding-left: 48px;
+    }
+
+    .first-section {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
+    .second-section {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
+    .third-section {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
+    .section-first {
+        top: 3px;
+    }
+
+    .footer-last-three {
+        padding-bottom: 20px;
+    }
+
+    .section-first-line {
+        top: 7px;
+    }
+
+
+}
+
+@media screen and (min-width: 1920px) {
+
+    /* .header-section-first{
+        padding-right: 108px;
+        padding-left: 108px;
+    } */
+
+    /* .bengaluru-section{
+        max-width: 1440px;
+        margin: 0 auto;
+    } */
+
+    .heading-content {
+        bottom: 0;
+    }
+
+    .room-details{
+        margin-bottom: -1px;
+    }
+
+    .footer-content {
+        background: #f7f7f7;
+    }
+
+    .footer-heading h2 {
+        margin-bottom: 8px;
+    }
+
+    .footer-section-content {
+        max-width: 1709px;
+    }
+
+    /* .first-section{
         padding-top: 32px;
         padding-bottom: 32px;
     }
@@ -1296,49 +1543,12 @@ footer {
     }
 
     .third-section{
-        padding-top: 32px;
+        padding-top: 32px;          
         padding-bottom: 32px;
+    } */
+
+    .footer-last-three {
+        padding-bottom: 21px;
     }
 
-    .footer-last-section-two{
-        display: none;
-    }
-
-    .footer-last-section-three{
-        display: block;
-        border-top: 1px solid #ebebeb;
-        padding-top: 22px;
-        padding-bottom: 20px;
-    }
-
-    .footer-last-three{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .section-first{
-        display: flex;
-        justify-content: flex-start;
-    }
-
-    .section-two{
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    .section-second-line{
-        display: flex;
-        position: relative;
-        bottom: 2px;
-    }
-
-    .social-media{
-        margin: 0;
-    }
-
-    .social-media-ul{
-        top: -4px;
-        margin: 0 0 0 18px !important;
-    }     
 }
