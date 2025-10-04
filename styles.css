@@ -146,7 +146,7 @@
     line-height: 0.625rem;
     font-size: 0.75rem;
     font-weight: 400;
-    letter-spacing: -0.01em;
+    letter-spacing: -0.12px;
     color: #6a6a6a;
 }
 
@@ -825,6 +825,7 @@
     .header-text {
         font-size: 14px;
         font-family: Nnormal;
+        letter-spacing: -0.02px;
     }
 
     .header-text:hover {
@@ -833,11 +834,11 @@
 }
 
     .icon-section-two {
-        right: 12px;
+        right: 13px;
     }
 
     .icon-section-three {
-        right: 40px;
+        right: 42px;
     }
 
     .header-second-home {
@@ -859,7 +860,7 @@
     }
 
     .header-text-second {
-        margin-left: 8px;
+        margin-left: 8.5px;
         position: relative;
         bottom: 1px;
     }
@@ -877,7 +878,7 @@
 
     .new-one {
         top: -21px;
-        left: -86px;
+        left: -87px;
     }
 
     .new-second {
