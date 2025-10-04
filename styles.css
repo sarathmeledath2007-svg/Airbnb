@@ -150,6 +150,11 @@
     color: #6a6a6a;
 }
 
+.header-text:hover {
+    font-weight: 600;
+    color: #6a6a6a;
+}
+
 .header-second-exp {
     margin-bottom: 8px;
     align-items: center;
@@ -247,7 +252,6 @@
 .heading-arrow {
     margin-inline-start: 2px;
     position: relative;
-    bottom: 1px;
 }
 
 .heading img {
@@ -264,10 +268,6 @@
     display: none;
 }
 
-.room-details {
-    padding: 4px 24px 0px;
-}
-
 .room-details-div {
     overflow-y: hidden;
     display: grid;
@@ -275,6 +275,7 @@
     grid-auto-columns: calc((100% - 11px) / 2);
     column-gap: 11px;
     row-gap: 8px;
+    padding: 2px 24px 0px;
 }
 
 .room-details-div::-webkit-scrollbar {
@@ -286,7 +287,6 @@
     position: relative;
     display: flex;
     overflow: hidden;
-    margin-top: -2px;
 }
 
 .room-image img {
@@ -578,6 +578,9 @@
     padding: 6px 8px;
     font-family: Nnormal;
     font-weight: 500;
+    font-size: 14px;
+    position: relative;
+    bottom: 1px;
 }
 
 .social-media {
@@ -655,8 +658,9 @@
 .navication {
     display: flex !important;
     align-items: center !important;
+    /* position: fixed; */
     left: 0;
-    right: 0;
+    bottom: 0;
     height: calc(var(--tab-bar-height, 65px) + var(--overflow-padding)) !important;
     background: #ffffff;
     border-top: 1px solid #ebebeb;
@@ -822,6 +826,11 @@
         font-size: 14px;
         font-family: Nnormal;
     }
+
+    .header-text:hover {
+    font-weight: 600;
+    color: #222222;
+}
 
     .icon-section-two {
         right: 12px;
@@ -1127,7 +1136,7 @@
 
     .room-details-div {
         grid-auto-columns: calc((100% - 32px) / 4);
-        padding-top: 2px;
+        padding: 0;
     }
 
     /* footer last section two */
@@ -1332,6 +1341,7 @@
         display: flex;
         position: relative;
         bottom: 2px;
+        left: 2px;
     }
 
     .social-media {
@@ -1410,10 +1420,6 @@
         margin: 32px 48px 14px;
     }
 
-    .heading-arrow {
-        bottom: 0;
-    }
-
     .heading-arrow-second {
         position: relative;
         bottom: 1px;
@@ -1461,10 +1467,6 @@
         padding: 48px 48px;
     }
 
-    .footer-heading h2 {
-        margin-bottom: 9px;
-    }
-
     .footer-section-main {
         padding-right: 48px;
         padding-left: 48px;
@@ -1490,7 +1492,7 @@
     }
 
     .footer-last-three {
-        padding-bottom: 20px;
+        padding-bottom: 21px;
     }
 
     .section-first-line {
@@ -1512,16 +1514,37 @@
         margin: 0 auto;
     } */
 
+    .header-button-search{
+        right: -1px;
+    }
+
     .heading-content {
         bottom: 0;
     }
 
-    .room-details{
+    .heading {
+        margin: 32px 48px 10px;
+    }
+
+    .room-details {
         margin-bottom: -1px;
+    }
+
+    .room-details-div {
+        position: relative;
+        bottom: 1px;
+    }
+
+    .image-content-favourite span {
+        bottom: 0;
     }
 
     .footer-content {
         background: #f7f7f7;
+    }
+
+    .footer-heading {
+        padding: 48px 32px;
     }
 
     .footer-heading h2 {
@@ -1532,22 +1555,30 @@
         max-width: 1709px;
     }
 
-    /* .first-section{
-        padding-top: 32px;
-        padding-bottom: 32px;
+    .first-section {
+        padding-bottom: 49px;
     }
 
-    .second-section{
-        padding-top: 32px;
-        padding-bottom: 32px;
+    .second-section {
+        padding-bottom: 49px;
     }
 
-    .third-section{
-        padding-top: 32px;          
-        padding-bottom: 32px;
-    } */
+    .third-section {
+        padding-bottom: 49px;
+    }
+
+    .second-section {
+        position: relative;
+        right: 5px;
+    }
+
+    .third-section {
+        position: relative;
+        right: 9px;
+    }
 
     .footer-last-three {
+        padding-top: 20px;
         padding-bottom: 21px;
     }
 
