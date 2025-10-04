@@ -697,7 +697,7 @@
     max-width: 20% !important;
     min-width: 0px !important;
     position: relative;
-    left: 1px;
+    left: 2px;
 }
 
 .nav-search img {
@@ -711,6 +711,7 @@
     line-height: 12px;
     color: #da1249;
     text-overflow: ellipsis !important;
+    letter-spacing: 0.12px;
 }
 
 .nav-wishlist {
